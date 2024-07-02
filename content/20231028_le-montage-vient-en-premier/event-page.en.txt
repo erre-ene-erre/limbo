@@ -1,0 +1,38 @@
+Title: Le Montage Vient en Premier
+
+----
+
+Artist: Melina Wilson
+
+----
+
+Datestart: 2023-10-28
+
+----
+
+Dateend: 
+
+----
+
+Eventtype: Flag
+
+----
+
+Location: Zabriskie
+
+----
+
+Extrafiles:
+
+- 
+  text: Poster
+  media:
+    - file://bxlsUARloiXnWGvF
+
+----
+
+Eventinfo: <p>Inspired by Jean Luc Goddard</p><p></p><p>blah blah</p>
+
+----
+
+Uuid: M87CuoGGVRODEB7Z

@@ -1,0 +1,13 @@
+Title: Animal Ritual
+
+----
+
+Eventtype: Exposition
+
+----
+
+Extrafiles: 
+
+----
+
+Eventinfo: 

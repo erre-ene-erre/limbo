@@ -1,0 +1,33 @@
+Title: Frigo
+
+----
+
+Artist: 
+
+----
+
+Datestart: 2024-02-22
+
+----
+
+Dateend: 
+
+----
+
+Eventtype: Open Call
+
+----
+
+Location: Zabriskie
+
+----
+
+Extrafiles: 
+
+----
+
+Eventinfo: <p>Thank you all for the postcards :)</p>
+
+----
+
+Uuid: adRRBBzBsMvgcky3

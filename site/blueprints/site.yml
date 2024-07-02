@@ -1,5 +1,30 @@
 title: Site
 
-sections:
-  pages:
-    type: pages
+columns:
+  - width: 1/2
+    sections:
+      information:
+        type: fields
+        fields:
+          metadescription:
+            label: Meta Description
+            type: textarea
+            buttons: false
+            help: 
+              en: This description is what appears in Google search.
+              fr: Cette description est celle qui apparaît dans la recherche Google.
+            translate: false
+  - width: 1/2
+    sections:
+      generals:
+        label: Info Pages
+        type: pages
+        template: info-page
+        image: false
+        max: 1
+      projects:
+        label: Events
+        type: pages
+        template: event-page
+        sortBy: datestart desc
+        image: false

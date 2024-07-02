@@ -1,0 +1,9 @@
+Title: Extra Files
+
+accept:
+  mime: application/pdf, image/*
+  maxsize: 90000000
+fields:
+  sort:
+    type: hidden
+    translate: false

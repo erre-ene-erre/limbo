@@ -1,0 +1,37 @@
+Title: Tout le monde n'a jamais existé avant
+
+----
+
+Artist: Victor Delétraz
+
+----
+
+Datestart: 2023-11-09
+
+----
+
+Dateend: 2023-11-30
+
+----
+
+Eventtype: Exhibition
+
+----
+
+Location: Zabriskie
+
+----
+
+Extrafiles: 
+
+----
+
+Eventinfo: <p>In the air</p>
+
+----
+
+Content: 
+
+----
+
+Uuid: SQyNOrwkVowb9IeD

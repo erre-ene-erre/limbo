@@ -1,20 +1,21 @@
 {
   "name": "getkirby/plainkit",
-  "description": "Kirby Plainkit",
-  "type": "project",
+  "description": "LIMBO Collective template",
+  "type": "gallery",
   "keywords": [
-    "kirby",
+    "art",
     "cms",
-    "starterkit"
+    "customtemplate",
+    "gallery"
   ],
   "authors": [
     {
-      "name": "Bastian Allgeier",
-      "email": "bastian@getkirby.com",
-      "homepage": "https://getkirby.com"
+      "name": "Rodrigo Nava Ramirez",
+      "email": "email@rodrigonava.mx",
+      "homepage": "https://rodrigonava.mx"
     }
   ],
-  "homepage": "https://getkirby.com",
+  "homepage": "https://limbospace.ch",
   "support": {
     "email": "support@getkirby.com",
     "issues": "https://github.com/getkirby/starterkit/issues",

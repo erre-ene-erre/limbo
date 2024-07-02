@@ -1,0 +1,71 @@
+title: Event Page
+
+num: '{{ page.datestart.toDate("YMMdd") }}'
+
+columns:
+  - width: 1/2
+    sections:
+      gralinfo:
+        type: fields
+        fields:
+          artist:
+            type: text
+            translate: false
+          datestart:
+            label: Start Date
+            type: date
+            width: 1/2
+            display: DD.MM.YYYY
+            default: today
+            translate: false
+            required: true
+          dateend:
+            label: Finishing Date
+            type: date
+            width: 1/2
+            display: DD.MM.YYYY
+            min: '{{ page.datestart.toDate("Y-m-d") }}'
+            translate: false
+            help: PS. If it is a one day thing you don't need to add anything here
+          eventtype:
+            type: tags
+            min: 1
+            max: 1
+            width: 1/2
+          location:
+            type: tags
+            min: 1
+            max: 1
+            translate: false
+            width: 1/2
+          extrafiles:
+            label: Extra Files
+            help: ie. Poster, exhibition text
+            type: structure
+            fields:
+              text:
+                type: text
+              media:
+                label: File    
+                type: files
+                template: extra-file
+                min: 1
+                max: 1
+      gallery:
+        label: Event Media (Gallery)
+        type: files
+        template: media-file
+        layout: cards
+        limit: 10
+  - width: 1/2
+    sticky: true
+    sections:
+      content:
+        type: fields
+        fields:
+          eventinfo:
+            label: Event Info
+            type: writer
+            headings:
+              - 2
+              - 3

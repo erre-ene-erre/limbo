@@ -1,0 +1,33 @@
+Title: BONAPPETI
+
+----
+
+Artist: Gregory Bourrilly
+
+----
+
+Datestart: 2020-12-17
+
+----
+
+Dateend: 2021-01-08
+
+----
+
+Eventtype: Exhibition
+
+----
+
+Location: Rosemont
+
+----
+
+Extrafiles: 
+
+----
+
+Eventinfo: <p>For the last exhibition of 2020, LIMBO invited the artist, ceramist, fashion designer and collector, Gregory Bourrilly, to take over the hall on avenue Rosemont alone. The accumulation of objects of all kinds, such as remnants of his creations, objects found on the street, gifts and samples of textiles or ceramics, seems to be an important part of his creative strategy, practical sometimes proving difficult to manage, especially when storage space is limited. A huge empty garage like ours therefore represented an opportunity to compose and assemble these objects into sculptures and installations, in accordance with the initial promise he had made to them, that is to say that of transforming them into works of art. art. </p><p>Sorts of scenes, abstract living paintings, or altars for things, the various installations presented are given to be visited from the inside giving birth to a strange environment loaded with numerous stories intertwined with multiple layers of meaning</p>
+
+----
+
+Uuid: Kh3sFHI2iAJI1NvX

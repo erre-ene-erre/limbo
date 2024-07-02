@@ -1,0 +1,17 @@
+Caption: 
+
+----
+
+Alt: View of a brick and soil sculpture with a Bromalia flower srpouting from its top
+
+----
+
+Sort: 1
+
+----
+
+Uuid: 9JaSFzrDhQZcYVCT
+
+----
+
+Template: media-file
