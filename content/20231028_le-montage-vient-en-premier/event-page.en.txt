@@ -10,11 +10,11 @@ Datestart: 2023-10-28
 
 ----
 
-Dateend: 
+Dateend: 2024-01-10
 
 ----
 
-Eventtype: Flag
+Eventtype: Drapeaux
 
 ----
 
@@ -22,16 +22,11 @@ Location: Zabriskie
 
 ----
 
-Extrafiles:
-
-- 
-  text: Poster
-  media:
-    - file://bxlsUARloiXnWGvF
+Extrafiles: 
 
 ----
 
-Eventinfo: <p>Inspired by Jean Luc Goddard</p><p></p><p>blah blah</p>
+Eventinfo: <p>In the end, what is a flag? Each pair of works presented in this program answers this question in its own way. The guest artists choose the next artist, creating a chain that travels the world. </p><p>Melina Wilson is the first guest artist. She lives and works in Zurich. </p><p>As the latest offshoot of her transdisciplinary research project on Jean-Luc Godard's corpus of films made alongside Lac Leman, Melina Wilson’s flagworks state ‘Ciel contre Terre’ and ‘Terre contre Ciel’, announcing, in her words, “[…] the flow of images at the crossroads of memories of walks and what remains of the films we've seen.’’ and that ‘’it’s cinema that disorganizes the sequence of our memory, and everyday life that reorganizes it, not in reverse, but in a different way.’’ Just as many of Jean-Luc’s films are visual essays on a subject that obsesses him, and a reflection on cinema's ability to deal with that subject, Melina’s aim as a graphic designer and artist, is to give form to the questions she asks herself, and to see to what extent she can deal with these questions accurately and precisely within the field of graphic design.</p><p>Photos Jeanne Tullen </p><p>Poster Cholé Pannatier </p>
 
 ----
 

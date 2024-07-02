@@ -36,6 +36,10 @@ Extrafiles:
     - file://gXaODgEy21COGZO2
   document:
     - file://gXaODgEy21COGZO2
+- 
+  text: postcard
+  media:
+    - file://ovH3RZrhi0BTOEVs
 
 ----
 

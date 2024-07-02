@@ -1,9 +1,0 @@
-Sort: 5
-
-----
-
-Caption: 
-
-----
-
-Template: media-file

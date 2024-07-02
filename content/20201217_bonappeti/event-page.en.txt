@@ -22,7 +22,20 @@ Location: Rosemont
 
 ----
 
-Extrafiles: 
+Extrafiles:
+
+- 
+  text: Poster
+  media:
+    - file://NGGo8iQ4grqqeftz
+- 
+  text: Floor plan
+  media:
+    - file://jlH31BdU12X947CH
+- 
+  text: Press (French)
+  media:
+    - file://dEniazVduWgpajYc
 
 ----
 

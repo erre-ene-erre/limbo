@@ -22,7 +22,12 @@ Location: Zabriskie
 
 ----
 
-Extrafiles: 
+Extrafiles:
+
+- 
+  text: exhibition text
+  media:
+    - file://ZOY7IiOjp0CxhdMC
 
 ----
 

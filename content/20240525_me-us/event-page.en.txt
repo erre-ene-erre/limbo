@@ -1,0 +1,33 @@
+Title: Me & Us
+
+----
+
+Artist: César Brun
+
+----
+
+Datestart: 2024-05-25
+
+----
+
+Dateend: 2024-07-01
+
+----
+
+Eventtype: Drapeaux
+
+----
+
+Location: Zabriskie
+
+----
+
+Extrafiles: 
+
+----
+
+Eventinfo: <p>In the end, what is a flag? Each pair of works presented in this program answers this question in its own way. The guest artists choose the next artist, creating a chain that travels the world.</p><p>César Brun, who lives and works in Taipei, is the fifth artist to take part in this chain of flags project. He was invited by Mong Hsuan. </p><p>César work draw inspiration from the marginal figures found in medieval paintings before linear perspective became standardised. César recreates these little vignettes using simple tools like ballpoint pens, markers, and printer paper combined with libre software.</p><p>Photos Jeanne Tullen </p><p>Poster Cholé Pannatier</p>
+
+----
+
+Uuid: ZUI87yqU3VP4Vsko

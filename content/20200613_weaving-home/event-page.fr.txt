@@ -6,7 +6,16 @@ Eventtype: Exposition
 
 ----
 
-Extrafiles: 
+Extrafiles:
+
+- 
+  text: poster
+  media:
+    - file://bGXdCUY5FTABHE3p
+- 
+  text: "texte d'exposition"
+  media:
+    - file://kjjmksivcOppHaTp
 
 ----
 

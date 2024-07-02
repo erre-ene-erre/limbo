@@ -6,7 +6,12 @@ Eventtype: Performance
 
 ----
 
-Extrafiles: 
+Extrafiles:
+
+- 
+  text: "texte d'exposition"
+  media:
+    - file://jbthvcayAzbdi7pc
 
 ----
 

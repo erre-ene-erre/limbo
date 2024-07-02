@@ -10,7 +10,7 @@ Datestart: 2023-11-09
 
 ----
 
-Dateend: 2023-11-30
+Dateend: 2023-12-16
 
 ----
 
@@ -22,11 +22,16 @@ Location: Zabriskie
 
 ----
 
-Extrafiles: 
+Extrafiles:
+
+- 
+  text: exhibition text
+  media:
+    - file://ka4Uq50kUa2oD0G8
 
 ----
 
-Eventinfo: <p>In the air</p>
+Eventinfo: <p>For his solo show, Victor starts from the limits imposed by the truth (or generalization?) of his title statement. Elements and little dramas come together to create the little protocols of a little world to which we are only little spectators. Several scales and rules interact together like a mirror of our contemporary world, creating problems, constraints, ideas and solutions, looping in the folly of systems. </p><p>Photos Jeanne Tullen</p><p>Poster Arnaud Wagnières</p><p>Texte Yasemin Imre </p>
 
 ----
 

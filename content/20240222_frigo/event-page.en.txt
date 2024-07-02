@@ -2,7 +2,7 @@ Title: Frigo
 
 ----
 
-Artist: 
+Artist: Expositon collective
 
 ----
 
@@ -10,7 +10,7 @@ Datestart: 2024-02-22
 
 ----
 
-Dateend: 
+Dateend: 2024-03-14
 
 ----
 
@@ -22,11 +22,16 @@ Location: Zabriskie
 
 ----
 
-Extrafiles: 
+Extrafiles:
+
+- 
+  text: 'appel à participation '
+  media:
+    - file://no1XpNUNlryHhpte
 
 ----
 
-Eventinfo: <p>Thank you all for the postcards :)</p>
+Eventinfo: <p>For a few weeks, Zabriskie took the appearance of... a fridge! In response to our call for projects on social networks and by word of mouth, over the months of winrer we've received great postcards that have warmed our hearts. Memories of the exhilaration of the summer months, but especially images and words that strengthen us during this particularly dark time. 🌵🍉</p><p>You joined us for a delicious meal prepared by Marlène Charpentié. Together we covered Zabriskie with the sweet words we had received over the winter!</p>
 
 ----
 

@@ -1,0 +1,42 @@
+Title: Aqui no hay nada pasando
+
+----
+
+Artist: Manuela Morales Delano
+
+----
+
+Datestart: 2024-01-20
+
+----
+
+Dateend: 2024-02-15
+
+----
+
+Eventtype: exposition
+
+----
+
+Location: Zabriskie
+
+----
+
+Extrafiles:
+
+- 
+  text: exhibition text
+  media:
+    - file://tUpom2Qya3crJWTH
+- 
+  text: postcard
+  media:
+    - file://k4lPxHqxDAHkSOXb
+
+----
+
+Eventinfo: <p>Manuela (1986, born in Talcahuano, living and working in Basel) is an artist -and curator- whose practice spans various media, often resulting in site-specific installations that address the economic and social impact of colonial legacies. Stemming from an analysis of her material and/or poetic experience of a particular context, she wittily de-particularises this engagement by playing with imposed narratives, vernacular legends, and history, often incorporating an invitation to an act of solidarity. Recently, her research has focused on forms of political protests and their cycles, of which she will show the latest iteration at Zabriskie. </p><p>From the outside, you might think that the space is closed, condemned, that « there’s nothing to see here ». So come closer and look for loopholes to slip your gaze inside.</p><p>Texte Yasemin Imre </p><p>Photos Charles Benjamin et Guillaume Python</p>
+
+----
+
+Uuid: QX2E55FVqpJKSAmT
