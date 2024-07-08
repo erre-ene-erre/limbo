@@ -1,5 +1,9 @@
 UnLazy.lazyLoad()
 
+if(Marquee3k){
+Marquee3k.init({selector: 'marquee-container',});
+}
+
 //load page
 setTimeout(() => {
     showInfo();
@@ -48,26 +52,30 @@ if (document.querySelectorAll('.gallery-item').length > 0){
     let buttons = document.querySelectorAll('.button');
     let prevBut = document.querySelector('.button.prev');
     let nextBut = document.querySelector('.button.next');
-    let active = document.querySelector('.active');
+    let active = document.querySelector('.shown');
     imgButtonDisplay(active);
 
     prevBut.addEventListener('click', () =>{changeImage('left');});
     nextBut.addEventListener('click', () =>{changeImage('right');});
     
     function changeImage(direction) {
-        let activePos = parseInt(active.dataset.position) - 1;
-        let nextPos = direction == 'right' ? activePos + 1 : activePos - 1;
-        console.log(nextPos);
-        gallery.forEach(item => item.classList.remove('active'));
-        gallery[nextPos].classList.add('active');
-        active = document.querySelector('.active');
+        let nextImg = direction == 'right' ? active.nextElementSibling : active.previousElementSibling;
+        gallery.forEach(item => item.classList.remove('shown'));
+        nextImg.classList.add('shown');
+        active = document.querySelector('.shown');
         imgButtonDisplay(active);
     }
     function imgButtonDisplay(object) {
-        buttons.forEach(item => item.classList.remove('hide'));
-        if (object.dataset.position == '1') {
+        buttons.forEach(item => {
+            // item.classList.add('active');
+            item.classList.remove('hide');
+        });
+        console.log(object, object.dataset.hasprev, object.dataset.hasnext);
+        if (!object.dataset.hasprev) {
+            // prevBut.classList.remove('active');
             prevBut.classList.add('hide');
-        } else if (object.dataset.position >= gallery.length) {
+        } else if (!object.dataset.hasnext) {
+            // nextBut.classList.remove('active');
             nextBut.classList.add('hide');
         };
 

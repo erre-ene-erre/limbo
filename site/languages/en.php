@@ -10,7 +10,7 @@ return [
     'name' => 'English',
     'translations' => [
         'curr-up' => 'Current/Upcoming',
-        'events' => 'Events'
+        'events' => 'Programme'
     ],
     'url' => '/'
 ];

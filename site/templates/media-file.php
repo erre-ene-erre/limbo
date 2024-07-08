@@ -2,7 +2,7 @@
 
 <?php if ($image = $page->image()) : ?>
 <figure class='lightbox <?=$image -> orientation()?>'>
-<a href='javascript:history.back();'>
+<a href='<?= $page ->parent() -> url() ?>'>
     <img loading="lazy" alt="<?= $image -> alt() ?>"
     <?php if($image ->mime() === 'image/gif'): ?>
         src= "<?= $image -> url() ?>"

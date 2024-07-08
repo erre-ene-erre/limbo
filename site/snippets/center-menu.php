@@ -1,5 +1,5 @@
 <section class='menu-container <?php e(!$page->isHomePage(), 'start')?>'>
-    <div class='menu'>
+    <div class='menu <?= $page -> template() ?>'>
         <?php snippet('top-submenu') ?>
         <a href='<?= $site -> url() ?>'>
         <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 123.81">

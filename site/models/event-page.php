@@ -6,10 +6,11 @@ class EventPagePage extends Page
   {
     $images = [];
 
-    foreach ($this->images()->template('media-file') as $image) {
+    foreach ($this->images()->template('media-file') -> sort('sort', 'asc', 'filename', 'asc') as $image) {
       $images[] = [
         'slug'     => $image->name(),
-        'num'      => $image->sort()->value(),
+        'num'      => $image->indexOf(),
+        // 'num'      => $image->sort()->value(),
         'template' => 'media-file',
         'model'    => 'media-file',
       ];

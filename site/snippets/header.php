@@ -13,8 +13,8 @@
     <meta property="title" content="<?= $site->title() ?>">
     <meta property="og:title" content="<?= $site->title() ?>">
     <?php else: ?>
-    <meta property="title" content="<?= $pageUsing->title() ?>  &#02277;  <?= $site->title() ?>">
-    <meta property="og:title" content="<?= $pageUsing->title() ?>  &#02277 ;  <?= $site->title() ?>">
+    <meta property="title" content="<?= $pageUsing->title() ?>   &#1792;   <?= $site->title() ?>">
+    <meta property="og:title" content="<?= $pageUsing->title() ?>  &#1792;  <?= $site->title() ?>">
     <?php endif ?>
 
     <meta name="description" content="<?= $pageUsing->metadescription() -> or($site -> metadescription()) ?>">
@@ -25,7 +25,7 @@
     <?php if($page->isHomePage()): ?>
     <title> <?= $site->title() ?></title>
     <?php else: ?>
-    <title><?= $pageUsing->title() ?>  &#02277;  <?= $site->title() ?></title>
+    <title><?= $pageUsing->title() ?>   &#1792;   <?= $site->title() ?></title>
     <?php endif ?>
     <?php if($site -> favicon() -> isNotEmpty()) :?>
     <link rel="icon" type='image/png' href="<?= $site -> files() -> template('favicon') ->first() ->url() ?>">
