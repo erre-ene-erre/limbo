@@ -34,7 +34,7 @@
     <?= css('/assets/css/index.css') ?>
     <?= css('@auto') ?>
 </head>
-<body>
+<body class='<?= str_replace(' ', '-', $page -> template()) ?>'>
 <?php snippet('center-menu') ?>
 <div id="swup" class="transition-fade">
 <main class="main-container <?= str_replace(' ', '-', $page -> template()) ?>">

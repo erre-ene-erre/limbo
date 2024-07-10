@@ -126,5 +126,5 @@ function handler(event) {
 }
 
 // This handler will be executed only once when the cursor is hovered
-submenus.forEach(menu =>{menu.addEventListener("pointerout", handler, false)})
+submenus.forEach(menu =>{menu.addEventListener("pointerup", handler, false)})
 // test.addEventListener("pointerout", handler, false);

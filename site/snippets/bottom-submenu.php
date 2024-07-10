@@ -33,5 +33,8 @@
     <?php endif ?>
     <?php if(!$page ->hasNextListed()):?><span class='button img-cont hide'>></span><?php endif ?>
 <?php endif ?>
+<?php if($is_media): ?>
+<?php else: ?>
 <span class='close-menu button fill'><?php echo t('close') ?></span>
+<?php endif?>
 </div>

@@ -365,7 +365,7 @@ figure.lightbox figcaption {
 /* Mobile */
 @media screen and (max-width: 500px) {
     html{font-size: 0.8rem;}
-    body{overflow-x: clip;}
+    body:not(.media-file){overflow-x: clip;}
     p{font-size: 1.3rem;}
     .menu-container .menu{max-width: 90vw;}
     #logo{width: 70%;}

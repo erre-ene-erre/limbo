@@ -28,5 +28,8 @@ $place = $kirby -> collection('all-events') -> pluck('location', ',', true);
         <a href='<?= $page ->parent() -> url() ?>'><?= $page -> parent() -> title() ?></a>
     </span>
 <?php endif ?>
+<?php if($is_media or $is_event): ?>
+<?php else: ?>
 <span class='close-menu button fill'><?php echo t('close') ?></span>
+<?php endif?>
 </div>
