@@ -12,6 +12,9 @@
         data-sizes="auto"
     <?php endif ?>
     >
+    <?php if($image -> caption() -> isNotEmpty()): ?>
+    <figcaption><?= $image -> caption() ?></figcaption>
+    <?php endif ?>
 </a>
 </figure>
 <?php endif ?>

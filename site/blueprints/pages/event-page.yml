@@ -66,6 +66,9 @@ columns:
           eventinfo:
             label: Event Info
             type: writer
+            toolbar:
+              inline: false
             headings:
               - 2
               - 3
+              - 6

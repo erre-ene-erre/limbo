@@ -14,22 +14,24 @@
         </span> 
     <?php endforeach ?>
 <?php elseif($is_event): ?>
-    <?php if($page -> children() -> count() > 1): ?>
-        <span class='button prev'>← Image</span>
-        <span class='button next'>Image →</span>
-    <?php endif ?>
+    <?php foreach($kirby->languages() as $language): ?>
+        <span class='button fill <?php e($kirby->language() == $language, 'active')?>'>
+            <a href='<?= $page->url($language->code()) ?>' hreflang="<?php echo $language->code() ?>"> <?= html($language->name()) ?> </a>
+        </span> 
+    <?php endforeach ?>
 <?php elseif($is_media): ?>
-    <?php if(!$page ->hasPrevListed()):?><span class='button hide'>← Image</span><?php endif ?>
+    <?php if(!$page ->hasPrevListed()):?><span class='button img-cont hide'><</span><?php endif ?>
     <?php if($page ->hasPrevListed()):?>
-    <span class='button'>
-        <a href='<?= $page -> prevListed() -> url() ?>'>← Image</a>
+    <span class='button img-cont'>
+        <a href='<?= $page -> prevListed() -> url() ?>'><</a>
     </span>
     <?php endif ?>
     <?php if($page ->hasNextListed()):?>
-    <span class='button'>
-        <a href='<?= $page -> nextListed() -> url() ?>'>Image →</a>
+    <span class='button img-cont'>
+        <a href='<?= $page -> nextListed() -> url() ?>'>></a>
     </span>
     <?php endif ?>
-    <?php if(!$page ->hasNextListed()):?><span class='button hide'>Image →</span><?php endif ?>
+    <?php if(!$page ->hasNextListed()):?><span class='button img-cont hide'>></span><?php endif ?>
 <?php endif ?>
+<span class='close-menu button fill'><?php echo t('close') ?></span>
 </div>

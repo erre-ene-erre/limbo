@@ -1,8 +1,12 @@
-Sort: 1
+Caption: Poster designed by Rodrigo Nava Ramirez
 
 ----
 
-Caption: 
+Alt: 
+
+----
+
+Sort: 1
 
 ----
 

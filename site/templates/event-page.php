@@ -6,8 +6,7 @@
         <h2 class='artist'><?= $page -> artist() ?></h2>
         <h3 class='dates'><?php snippet('date-set') ?></h3>
         <h1 class='year'><?= $page -> datestart() -> toDate('Y') ?></h1>
-        <h2 class='event-type'><?= $page -> eventtype() ?></h2>
-        <h2 class='place'><?= $page -> location() ?></h2>
+
     </div>
     <div class='extras'>
         <?php foreach($page->extrafiles()->toStructure() as $button): ?>
@@ -15,9 +14,18 @@
         <?php endforeach ?>
     </div>
     <div><?= $page -> eventinfo() ?></div>
+    <div class='credits'>
+        <?php foreach($page -> children() as $child): ?>
+        <?php if ($image = $child->image()) : ?>
+            <h6 class='<?php e(!$image ->caption() ->isNotEmpty(), 'no-border')?> <?php e($child ->isFirst(), 'shown')?>'><?= $image -> caption() ?></h6>
+        <?php endif ?>
+        <?php endforeach ?>
+    </div>
 </section>
 <section class='column right'>
     <?php if($page -> hasChildren()):?>
+        <span class='button prev'><</span>
+        <span class='button next'>></span>
     <?php foreach($page -> children() as $child): ?>
         
         <?php if ($image = $child->image()) : ?>

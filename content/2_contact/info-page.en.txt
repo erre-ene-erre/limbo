@@ -1,0 +1,17 @@
+Title: Contact
+
+----
+
+Links: 
+
+----
+
+Extrafiles: 
+
+----
+
+Info: <p>Limbo is Currently located at Zabriskie Point</p><p>Rond-point de Plainpalais <br>1205 Genève</p><p></p><p>For any enquiries, please reach us through <a href="mailto:contact@limbospace.ch" title="contact@limbospace.ch">contact@limbospace.ch</a><br></p><h6>Limbo is supported by the Loterie Romande and Pro Helvetia<br>Website design and development by <a href="https://rodrigonava.mx" target="_blank">Rodrigo Nava Ramirez</a></h6>
+
+----
+
+Uuid: kLTvWdsntYuikmEv

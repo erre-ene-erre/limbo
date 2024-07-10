@@ -21,15 +21,12 @@ $place = $kirby -> collection('all-events') -> pluck('location', ',', true);
         </span>
     <?php endforeach ?>
 <?php elseif($is_event): ?>
-    </span>
-    <?php foreach($kirby->languages() as $language): ?>
-        <span class='button fill <?php e($kirby->language() == $language, 'active')?>'>
-            <a href='<?= $page->url($language->code()) ?>' hreflang="<?php echo $language->code() ?>"> <?= html($language->name()) ?> </a>
-        </span> 
-    <?php endforeach ?>
-<?php elseif($is_media): ?>
+    <span class='button lightbox active'><?= $page -> eventtype() ?></span>
+    <span class='button lightbox active'><?= $page -> location() ?></span>
+<?php elseif($is_event or $is_media): ?>
     <span class='button lightbox active'>
         <a href='<?= $page ->parent() -> url() ?>'><?= $page -> parent() -> title() ?></a>
     </span>
 <?php endif ?>
+<span class='close-menu button fill'><?php echo t('close') ?></span>
 </div>

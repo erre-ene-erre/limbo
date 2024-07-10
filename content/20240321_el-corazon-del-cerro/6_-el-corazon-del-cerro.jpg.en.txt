@@ -1,8 +1,12 @@
-Sort: 5
+Caption: Installation View. Photo by Zoe Aubry
 
 ----
 
-Caption: 
+Alt: 
+
+----
+
+Sort: 5
 
 ----
 

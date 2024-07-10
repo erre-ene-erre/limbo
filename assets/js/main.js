@@ -52,30 +52,31 @@ if (document.querySelectorAll('.gallery-item').length > 0){
     let buttons = document.querySelectorAll('.button');
     let prevBut = document.querySelector('.button.prev');
     let nextBut = document.querySelector('.button.next');
-    let active = document.querySelector('.shown');
+    let active = document.querySelector('.gallery-item.shown');
+    let captions = document.querySelectorAll('.credits h6');
+    let activeCaption = document.querySelector('.credits h6.shown');
     imgButtonDisplay(active);
-
     prevBut.addEventListener('click', () =>{changeImage('left');});
     nextBut.addEventListener('click', () =>{changeImage('right');});
     
     function changeImage(direction) {
         let nextImg = direction == 'right' ? active.nextElementSibling : active.previousElementSibling;
+        let nextCap = direction == 'right' ? activeCaption.nextElementSibling : activeCaption.previousElementSibling;
         gallery.forEach(item => item.classList.remove('shown'));
+        captions.forEach(item => item.classList.remove('shown'));
         nextImg.classList.add('shown');
-        active = document.querySelector('.shown');
+        nextCap.classList.add('shown');
+        active = nextImg;
+        activeCaption = nextCap;
         imgButtonDisplay(active);
     }
     function imgButtonDisplay(object) {
         buttons.forEach(item => {
-            // item.classList.add('active');
             item.classList.remove('hide');
         });
-        console.log(object, object.dataset.hasprev, object.dataset.hasnext);
         if (!object.dataset.hasprev) {
-            // prevBut.classList.remove('active');
             prevBut.classList.add('hide');
         } else if (!object.dataset.hasnext) {
-            // nextBut.classList.remove('active');
             nextBut.classList.add('hide');
         };
 
@@ -83,6 +84,7 @@ if (document.querySelectorAll('.gallery-item').length > 0){
 }
 
 // Mobile layout change
+
 let mobileSize = window.matchMedia("(max-width: 500px)");
 
 function insertAfter(referenceNode, newNode) {
@@ -95,6 +97,34 @@ function changeLayout(before, newEl){
 if(document.querySelector('.column.right')){
     let colRight = document.querySelector('.column.right');
     let extras = document.querySelector('.extras');
+    changeLayout(extras, document.querySelector('.credits'));
     changeLayout(extras, colRight);
     window.addEventListener('resize', changeLayout)
 }
+
+//Mobile menu controlers
+let submenus = document.querySelectorAll("menu .submenu");
+let closeBut = document.querySelectorAll('.submenu .close-menu');
+
+function handler(event) {
+    console.log('onPointerDown was excecuted'); // debug thing
+    console.log(this);
+
+    // If the pointer is touch, from mouse, pen, touch
+    if (event.pointerType === 'touch') {
+        event.preventDefault();
+
+        document.body.classList.add('pointer-active')
+        // add the active class
+        this.classList.add('mobile-ver');
+
+        // Remove class after a delay
+        setTimeout(function () {
+            this.classList.remove('mobile-ver');
+        }, 3000);
+    }
+}
+
+// This handler will be executed only once when the cursor is hovered
+submenus.forEach(menu =>{menu.addEventListener("pointerout", handler, false)})
+// test.addEventListener("pointerout", handler, false);
