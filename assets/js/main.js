@@ -101,30 +101,44 @@ if(document.querySelector('.column.right')){
     changeLayout(extras, colRight);
     window.addEventListener('resize', changeLayout)
 }
+if (mobileSize.matches) { 
+    let submenus = document.querySelectorAll(".menu .submenu");
+    // submenus.forEach(menu =>{menu.classList.add('mobile-ver')});
+    let closeBut = document.querySelectorAll('.submenu .close-menu');
 
+//     submenus.forEach(menu => { menu.addEventListener("touchstart", (e) => {
+//         menu.classList.add('shown');
+//         });
+//     });
+    closeBut.forEach(bttn => {
+        bttn.addEventListener('click', () => {
+            bttn.parentElement.classList.remove('mobile-ver')
+        });
+    })
+    submenus.forEach(menu => { menu.addEventListener("pointerout", handler, false) })
+ }
 //Mobile menu controlers
-let submenus = document.querySelectorAll("menu .submenu");
-let closeBut = document.querySelectorAll('.submenu .close-menu');
+
 
 function handler(event) {
     console.log('onPointerDown was excecuted'); // debug thing
     console.log(this);
-
+    let thisMenu = this;
     // If the pointer is touch, from mouse, pen, touch
     if (event.pointerType === 'touch') {
         event.preventDefault();
 
         document.body.classList.add('pointer-active')
         // add the active class
-        this.classList.add('mobile-ver');
+        thisMenu.classList.add('mobile-ver');
 
         // Remove class after a delay
-        setTimeout(function () {
-            this.classList.remove('mobile-ver');
-        }, 3000);
+        // setTimeout(function () {
+        //     thisMenu.classList.remove('mobile-ver');
+        //     console.log('hoolaaaa');
+        // }, 3000);
     }
 }
 
 // This handler will be executed only once when the cursor is hovered
-submenus.forEach(menu =>{menu.addEventListener("pointerup", handler, false)})
 // test.addEventListener("pointerout", handler, false);

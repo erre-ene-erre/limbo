@@ -4,18 +4,28 @@ class EventPagePage extends Page
 {
   public function children(): Kirby\Cms\Pages
   {
-    $images = [];
+    $files = [];
 
-    foreach ($this->images()->template('media-file') -> sort('sort', 'asc', 'filename', 'asc') as $image) {
-      $images[] = [
-        'slug'     => $image->name(),
-        'num'      => $image->indexOf(),
+    foreach ($this->images()->template('media-file') -> sort('sort', 'asc', 'filename', 'asc') as $media) {
+      $files[] = [
+        'slug'     => $media->name(),
+        'num'      => $media->indexOf(),
         // 'num'      => $image->sort()->value(),
         'template' => 'media-file',
         'model'    => 'media-file',
       ];
     }
 
-    return Pages::factory($images, $this);
+    foreach ($this->files()->template('extra-file') -> sort('sort', 'asc', 'filename', 'asc') as $media) {
+      $files[] = [
+        'slug'     => $media->name(),
+        // 'num'      => $media->indexOf(),
+        'num'      => $media->sort()->value(),
+        'template' => 'extra-file',
+        'model'    => 'extra-file',
+      ];
+    }
+
+    return Pages::factory($files, $this);
   }
 }

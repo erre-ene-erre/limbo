@@ -2,4 +2,8 @@ Uuid: cl1aO3krw6j2GREI
 
 ----
 
+Template: extra-file
+
+----
+
 Sort: 3

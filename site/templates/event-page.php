@@ -10,7 +10,11 @@
     </div>
     <div class='extras'>
         <?php foreach($page->extrafiles()->toStructure() as $button): ?>
-            <span class='button'><a href='<?=$button -> media()-> toFile() -> url() ?>' target="_blank"><?= $button -> text() ?></a></span>
+            <?php foreach($page -> children() -> template('extra-file') as $child): ?>
+                <?php if($child -> slug()  == $button -> media() -> toFile() -> name()): ?>
+                <span class='button'><a href='<?=$child -> url() ?>'><?= $button -> text() ?></a></span>
+                <?php endif ?>
+            <?php endforeach ?>
         <?php endforeach ?>
     </div>
     <div><?= $page -> eventinfo() ?></div>
@@ -26,10 +30,12 @@
     <?php if($page -> hasChildren()):?>
         <span class='button prev'><</span>
         <span class='button next'>></span>
-    <?php foreach($page -> children() as $child): ?>
+    <?php foreach($page -> children() -> template('media-file') as $child): ?>
         
         <?php if ($image = $child->image()) : ?>
-            <figure class='gallery-item <?php e($child ->isFirst(), 'shown')?>' data-hasnext='<?=$child->hasNext()?>' data-hasprev='<?=$child->hasPrev()?>'>
+            <figure class='gallery-item <?php e($child ->isFirst(), 'shown')?>' 
+                data-hasnext='<?=$child->hasNext() and $child -> next() -> template() =='media-file'?>' 
+                data-hasprev='<?=$child->hasPrev() and $child -> prev() -> template() =='media-file'?>'>
             <a href="<?= $child->url() ?>">
                 <img loading="lazy" class='<?= $image -> orientation() ?>' alt="<?= $image -> alt() ?>"
                 <?php if($image ->mime() === 'image/gif'): ?>

@@ -2,4 +2,8 @@ Uuid: YgUIQ8UY4zoBIs5W
 
 ----
 
+Template: extra-file
+
+----
+
 Sort: 2

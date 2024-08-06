@@ -21,9 +21,13 @@ $place = $kirby -> collection('all-events') -> pluck('location', ',', true);
         </span>
     <?php endforeach ?>
 <?php elseif($is_event): ?>
-    <span class='button lightbox active'><?= $page -> eventtype() ?></span>
-    <span class='button lightbox active'><?= $page -> location() ?></span>
-<?php elseif($is_event or $is_media): ?>
+    <span class='button lightbox active'>
+        <a href="<?= url('home', ['params' => ['type' => $page -> eventtype()]]) ?>"><?= $page -> eventtype() ?></a>
+    </span>
+    <span class='button lightbox active'>
+        <a href="<?= url('home', ['params' => ['at' => $page -> location()]]) ?>"><?= $page -> location() ?></a>
+    </span>
+<?php elseif($is_event or $is_media or $is_pdf): ?>
     <span class='button lightbox active'>
         <a href='<?= $page ->parent() -> url() ?>'><?= $page -> parent() -> title() ?></a>
     </span>
