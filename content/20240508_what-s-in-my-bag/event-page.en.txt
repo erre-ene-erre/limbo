@@ -28,6 +28,10 @@ Extrafiles:
   text: exhibition text
   media:
     - file://ZOY7IiOjp0CxhdMC
+- 
+  text: Anmeldung
+  media:
+    - file://63xrTbLY8pKAgpHb
 
 ----
 
