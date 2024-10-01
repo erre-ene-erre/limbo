@@ -18,7 +18,6 @@
         
         <?php if ($image = $child->image()) : ?>
             <figure class='gallery-item <?php e($child->num() == '1', 'active')?>' data-position='<?=$child->num()?>'>
-            <a href="<?= $child->url() ?>">
                 <img loading="lazy" class='<?= $image -> orientation() ?>' alt="<?= $image -> alt() ?>"
                 <?php if($image ->mime() === 'image/gif'): ?>
                     src= "<?= $image -> url() ?>"
@@ -28,7 +27,6 @@
                     data-sizes="auto"
                 <?php endif ?>
                 >
-            </a>
             </figure>
         <?php endif ?>
         

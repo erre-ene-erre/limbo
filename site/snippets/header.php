@@ -31,7 +31,7 @@
     <link rel="icon" type='image/png' href="<?= $site -> files() -> template('favicon') ->first() ->url() ?>">
     <?php endif ?>
 
-    <?= css('/assets/css/index.css') ?>
+    <?= css('/assets/css/index.css?v=1.1.1') ?>
     <?= css('@auto') ?>
 </head>
 <body class='<?= str_replace(' ', '-', $page -> template()) ?>'>

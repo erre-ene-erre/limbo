@@ -7,7 +7,7 @@ Marquee3k.init({selector: 'marquee-container',});
 //load page
 setTimeout(() => {
     showInfo();
-}, 1000);
+}, 400);
 function showInfo() {
     let menuCourtain = document.querySelector('.menu-container');
     menuCourtain.classList.add('start');
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
 }); 
 
 // image buttons
-if (document.querySelectorAll('.gallery-item').length > 0){
+if (document.querySelectorAll('.gallery-item').length > 1){
     let gallery = document.querySelectorAll('.gallery-item');
     let buttons = document.querySelectorAll('.button');
     let prevBut = document.querySelector('.button.prev');
@@ -88,57 +88,48 @@ if (document.querySelectorAll('.gallery-item').length > 0){
 let mobileSize = window.matchMedia("(max-width: 500px)");
 
 function insertAfter(referenceNode, newNode) {
-    referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+    if (referenceNode && referenceNode.parentNode) {
+        referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+    }
 }
-function changeLayout(before, newEl){
-    if (mobileSize.matches) { insertAfter(before, newEl); }
-}
-
-if(document.querySelector('.column.right')){
-    let colRight = document.querySelector('.column.right');
+function changeToMobileLayout() {
     let extras = document.querySelector('.extras');
-    changeLayout(extras, document.querySelector('.credits'));
-    changeLayout(extras, colRight);
-    window.addEventListener('resize', changeLayout)
-}
-if (mobileSize.matches) { 
-    let submenus = document.querySelectorAll(".menu .submenu");
-    // submenus.forEach(menu =>{menu.classList.add('mobile-ver')});
-    let closeBut = document.querySelectorAll('.submenu .close-menu');
+    let credits = document.querySelector('.credits');
+    let colRight = document.querySelector('.column.right');
 
-//     submenus.forEach(menu => { menu.addEventListener("touchstart", (e) => {
-//         menu.classList.add('shown');
-//         });
-//     });
-    closeBut.forEach(bttn => {
-        bttn.addEventListener('click', () => {
-            bttn.parentElement.classList.remove('mobile-ver')
-        });
-    })
-    submenus.forEach(menu => { menu.addEventListener("pointerout", handler, false) })
- }
-//Mobile menu controlers
-
-
-function handler(event) {
-    console.log('onPointerDown was excecuted'); // debug thing
-    console.log(this);
-    let thisMenu = this;
-    // If the pointer is touch, from mouse, pen, touch
-    if (event.pointerType === 'touch') {
-        event.preventDefault();
-
-        document.body.classList.add('pointer-active')
-        // add the active class
-        thisMenu.classList.add('mobile-ver');
-
-        // Remove class after a delay
-        // setTimeout(function () {
-        //     thisMenu.classList.remove('mobile-ver');
-        //     console.log('hoolaaaa');
-        // }, 3000);
+    // Check if elements exist before attempting to move them
+    if (extras && credits && colRight) {
+        insertAfter(extras, credits); // Move .credits after .extras
+        insertAfter(extras, colRight); // Move .column.right after .extras
     }
 }
 
-// This handler will be executed only once when the cursor is hovered
-// test.addEventListener("pointerout", handler, false);
+function changeToDesktopLayout() {
+    let columnLeft = document.querySelector('.column.left');
+    let credits = document.querySelector('.credits');
+    let colRight = document.querySelector('.column.right');
+
+    // Revert layout back to desktop by placing elements in original order
+    if (columnLeft && credits && colRight) {
+        insertAfter(document.querySelector('.gral-info'), credits); // Move .credits back after .gral-info
+        insertAfter(columnLeft, colRight); // Move .column.right back after .column.left
+    }
+}
+function handleResize() {
+    if (mobileSize.matches) { changeToMobileLayout(); } else { changeToDesktopLayout();}
+}
+
+window.addEventListener('resize', handleResize);
+handleResize();
+
+if(mobileSize.matches && document.querySelector('.mobile-menu')){
+    let openSubButtons = document.querySelectorAll('.button.openSub');
+
+    openSubButtons.forEach(button => {
+        button.addEventListener('click', () =>{
+            button.classList.toggle('active');
+            button.nextElementSibling.classList.toggle('shown');
+            button.innerText = button.classList.contains('active') ? 'Close' : button.dataset.text;
+        });
+    });
+}

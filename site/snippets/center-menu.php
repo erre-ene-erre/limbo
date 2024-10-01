@@ -11,5 +11,6 @@
         </svg>
         </a>
         <?php snippet('bottom-submenu') ?>
+        <?php snippet('mobile-menu') ?>
     </div>
 </section>
