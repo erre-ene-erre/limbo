@@ -14,7 +14,7 @@ Dateend: 2024-07-12
 
 ----
 
-Eventtype: Performance
+Eventtype: Performance, Exhibition
 
 ----
 
