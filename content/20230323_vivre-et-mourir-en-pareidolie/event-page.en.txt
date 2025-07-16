@@ -1,38 +1,0 @@
-Title: Vivre et mourir en pareidolie
-
-----
-
-Artist: Elias Njima
-
-----
-
-Datestart: 2023-03-23
-
-----
-
-Dateend: 2023-04-22
-
-----
-
-Eventtype: Drapeaux + expo solo
-
-----
-
-Location: Zabriskie
-
-----
-
-Extrafiles:
-
-- 
-  text: Exhibition text
-  media:
-    - file://IE5lay0CjY2i6TX7
-
-----
-
-Eventinfo: <p>About 4 to 2 million years ago, an early hominid saw a pebble and recognised a face on it. This object prompted either amusement or extreme astonishment (or other effects we may not even experience now). The early person brought it back to their cave-abode. And so begins the recorded account of aesthetic sense, the story of this little jasperite pebble validating the capacity for symbolic thinking, which was essential for the development of art and language.   Our brains are hardwired to be on the constant lookout for faces. Imagine all the information to process: Is this a face? Do I know this face? And what does this face say? </p><p>The mind having a facial recognition tool, if you will. Once facial features are recognised, it is believed to be alive. Think how gargoyles in the medieval square were believed to be actively mocking the passersby by imitating their expressions of fear and greed and thus effectuating religious adherence.   For the drapeaux of Zabriskie, Elias has created flower-gargoyles, perched above our heads, keeping their tender guard. The flowers do indeed have faces; it’s not a projection nor an imitation, but anthropomorphism, the automated adherence to analogy. Yet, as the expression goes: ‘fleur au fusil’, they may also be mocking our blissful naiveté.   Inside the space, it’s not gun barrels in which flowers are stuffed, but anything else. As there is potential to be a face, there is potential to be a vase. You have arrived at Pareidolie, please step in. Here, Elias’s works want you to recognise in them what is dear to you and follow the lineage of melodramatic gestures since the australopithecine.</p><p>Photos Jeanne Tullen / Zoé Aubry </p><p>Text Yasemin Imre et traduction Jeanne Tullen</p><p>Poster Chloé Pannetier </p><p></p>
-
-----
-
-Uuid: SxmBA09hfL40hyKC
