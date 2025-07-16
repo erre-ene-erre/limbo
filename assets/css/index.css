@@ -89,6 +89,10 @@ h1.title{font-family: 'Affigere', sans-serif; text-transform: uppercase; font-si
 h1.year{ font-family: 'Xolonium', serif; font-size: 1.5em;}
 h2.artist{ font-family: 'Resistance', sans-serif;}
 h2.event-type{ font-family: 'Calacarn', fantasy;}
+h2.event-type::after {
+    content: ',';
+    font-family: 'Ptah', sans-serif;
+}
 h2.place{ 
     font-family: 'Myrtillo', monospace; 
     color: var(--background);
