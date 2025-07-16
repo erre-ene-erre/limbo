@@ -14,6 +14,18 @@ columns:
               en: This description is what appears in Google search.
               fr: Cette description est celle qui apparaît dans la recherche Google.
             translate: false
+          favicon:
+            label: Website Icon
+            type: files
+            size: tiny
+            translate: false
+            uploads:
+              parent: site
+              template: icon-image
+            max: 1
+            layout: cards
+            image:
+              back: white
   - width: 1/2
     sections:
       generals:

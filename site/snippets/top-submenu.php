@@ -21,9 +21,11 @@ $place = $kirby -> collection('all-events') -> pluck('location', ',', true);
         </span>
     <?php endforeach ?>
 <?php elseif($is_event): ?>
+    <?php foreach($page -> eventtype() -> split(',') as $tag): ?>
     <span class='button lightbox active'>
-        <a href="<?= url('home', ['params' => ['type' => $page -> eventtype()]]) ?>"><?= $page -> eventtype() ?></a>
+        <a href="<?= url('home', ['params' => ['type' => $tag]]) ?>"><?= $tag ?></a>
     </span>
+    <?php endforeach ?>
     <span class='button lightbox active'>
         <a href="<?= url('home', ['params' => ['at' => $page -> location()]]) ?>"><?= $page -> location() ?></a>
     </span>

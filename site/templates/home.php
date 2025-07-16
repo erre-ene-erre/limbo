@@ -20,11 +20,13 @@
                 <div class="right-info">
                     <?php $date = param('date') ? date('Ymd',strtotime(param('date'))) : date('Ymd'); ?>
                     <h3 class='dates'><?php  snippet('date-set', ['page' => $event]) ?></h3>
-                    <h2 class='event-type'><?= $event -> eventtype() ?></h2>, 
-                    <h2 class='place'><?= $event -> location() ?></h2>
+                    <?php foreach ($event -> eventtype() -> split(',') as $tag): ?>
+                        <h2 class='event-type'><?= $tag ?></h2>
+                    <?php endforeach ?>
+                    , <h2 class='place'><?= $event -> location() ?></h2>
                 </div>
             </div>
-            <?php if($event -> hasImages()):?>
+            <?php if($event -> files() -> template('media-file') -> isNotEmpty()):?>
             <?php $icon = $event -> files() -> template('media-file') -> sortBy('sort', 'asc') -> first()?> 
             <figure class="image-icon">
                 <img loading="lazy" alt="<?= $icon -> alt() ?>"
@@ -78,14 +80,16 @@
                     <?php $date = param('date') ? date('Ymd',strtotime(param('date'))) : date('Ymd'); ?>
                     <h2 class='artist'><?=$event -> artist() ?></h2>
                     <h3 class='dates'><?php  snippet('date-set', ['page' => $event]) ?></h3>
-                    <h2 class='event-type'><?= $event -> eventtype() ?></h2>, 
+                    <?php foreach ($event -> eventtype() -> split(',') as $tag): ?>
+                        <h2 class='event-type'><?= $tag ?></h2>
+                    <?php endforeach ?> 
                     <h2 class='place'><?= $event -> location() ?></h2>
                 </div>
                 <div class="right-info">
                     
                 </div>
             </div>
-            <?php if($event -> hasImages()):?>
+            <?php if($event -> files() -> template('media-file') -> isNotEmpty()):?>
             <?php $icon = $event -> files() -> template('media-file') -> sortBy('sort', 'asc') -> first()?>
             <figure class="image-icon">
                 <img loading="lazy" alt="<?= $icon -> alt() ?>"

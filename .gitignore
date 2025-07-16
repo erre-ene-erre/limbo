@@ -10,9 +10,6 @@ Icon
 /media/*
 !/media/index.html
 
-/content/*
-!/content/index.html
-
 # Lock files
 # ---------------
 

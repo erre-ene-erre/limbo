@@ -28,10 +28,10 @@
     <title><?= $pageUsing->title() ?>   &#1792;   <?= $site->title() ?></title>
     <?php endif ?>
     <?php if($site -> favicon() -> isNotEmpty()) :?>
-    <link rel="icon" type='image/png' href="<?= $site -> files() -> template('favicon') ->first() ->url() ?>">
+    <link rel="icon" type='image/png' href="<?= $site -> files() -> template('icon-image') ->first() ->url() ?>">
     <?php endif ?>
 
-    <?= css('/assets/css/index.css?v=1.1.4') ?>
+    <?= css('/assets/css/index.css?v=1.1.5') ?>
     <?= css('@auto') ?>
 </head>
 <body class='<?= str_replace(' ', '-', $page -> template()) ?>'>
