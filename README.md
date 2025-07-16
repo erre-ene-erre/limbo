@@ -1,36 +1,29 @@
-<img src="http://getkirby.com/assets/images/github/plainkit.jpg" width="300">
+<img src="https://limbospace.ch/media/site/b836556ed1-1734712891/icon.png" width="125">
 
-**Kirby: the CMS that adapts to any project, loved by developers and editors alike.**
-The Plainkit is a minimal Kirby setup with the basics you need to start a project from scratch. It is the ideal choice if you are already familiar with Kirby and want to start step-by-step.
+# ✧･ﾟ: ✧･ﾟ: LIMBO :･ﾟ✧:･ﾟ✧
+## 2024
 
-You can learn more about Kirby at [getkirby.com](https://getkirby.com).
+[Live Site →](https://limbospace.ch) 
 
-### Try Kirby for free
+LIMBO is a curatorial collective based in Geneva, Switzerland. It currently manages Zabriskie, an independent art space housed in a former glass-walled bus shelter in the heart of the city. The collective aims to dissolve barriers between artistic practices by blending mediums, encouraging cross-disciplinary collaborations, and creating shared experiences among artists from diverse backgrounds.
 
-You can try Kirby and the Plainkit on your local machine or on a test server as long as you need to make sure it is the right tool for your next project. … and when you’re convinced, [buy your license](https://getkirby.com/buy).
+LIMBO’s website reflects its multidisciplinary approach and plays with the idea of “limbo” as an uncertain, in-between state. Drawing on zine, punk aesthetics and Kathy Acker’s cut-up technique, it embraces visual disruption through a playful mix of fonts and styles.
 
-### Get going
+### Design by [Rodrigo Nava Ramirez](https://rodrigonava.mx/)
+### Website Development by [Rodrigo Nava Ramirez](https://rodrigonava.mx/)
 
-Read our guide on [how to get started with Kirby](https://getkirby.com/docs/guide/quickstart).
+**My Role**
 
-You can [download the latest version](https://github.com/getkirby/plainkit/archive/main.zip) of the Plainkit.
-If you are familiar with Git, you can clone Kirby's Plainkit repository from Github.
+- **Creative Direction and concept development** through a research led approach in close colaboration with the curatorial collective, their vision for the gallery and their history
+- **Visual identity design**, including logos, colour palette, typography, and layout system  
+- **Web design (UX/UI)** using Figma & Adobe Creative Suite  
+- **Frontend development** (Kirby templates, custom snippets, CSS/JS)  
+- Integration of a **custom Kirby CMS setup** for flexible client content management  
+- Deployment & hosting setup  
 
-    git clone https://github.com/getkirby/plainkit.git
+**Tech Stack**
 
-## What's Kirby?
-
--   **[getkirby.com](https://getkirby.com)** – Get to know the CMS.
--   **[Try it](https://getkirby.com/try)** – Take a test ride with our online demo. Or download one of our kits to get started.
--   **[Documentation](https://getkirby.com/docs/guide)** – Read the official guide, reference and cookbook recipes.
--   **[Issues](https://github.com/getkirby/kirby/issues)** – Report bugs and other problems.
--   **[Feedback](https://feedback.getkirby.com)** – You have an idea for Kirby? Share it.
--   **[Forum](https://forum.getkirby.com)** – Whenever you get stuck, don't hesitate to reach out for questions and support.
--   **[Discord](https://chat.getkirby.com)** – Hang out and meet the community.
--   **[Mastodon](https://mastodon.social/@getkirby)** – Spread the word.
--   **[Instagram](https://www.instagram.com/getkirby/)** – Share your creations: #madewithkirby.
-
----
-
-© 2009 Bastian Allgeier
-[getkirby.com](https://getkirby.com) · [License agreement](https://getkirby.com/license)
+- **Design:** Adobe Creative Suite (Photoshop, Illustrator, InDesign), Figma  
+- **CMS:** [Kirby CMS](https://getkirby.com) for flexible content management  
+- **Frontend:** HTML, CSS, JavaScript (custom templates & snippets)  
+- **Other tools:** GitHub for version control
